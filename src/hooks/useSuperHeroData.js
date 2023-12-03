@@ -1,9 +1,11 @@
 import { useQuery, useQueryClient } from "react-query";
 
-import axios from "axios";
+// import axios from "axios";
+import { request } from "../utils/axios-utils";
 
 const fetchSuperHero = (heroId) => {
-  return axios.get(`http://localhost:4001/superheroes/${heroId}`);
+  // return axios.get(`http://localhost:4001/superheroes/${heroId}`);
+  return request({ url: `http://localhost:4001/superheroes/${heroId}` });
 };
 
 export const useSuperHeroData = (heroId) => {

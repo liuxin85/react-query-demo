@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import {
   useAddSuperHeroData,
   useSuperHeroesData,
-} from "../hooks/useSuperHerosData";
+} from "../../hooks/useSuperHerosData";
 
 
 const RQSuperHeroesPage = () => {

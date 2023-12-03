@@ -7,6 +7,8 @@ const fetchColors = ({ pageParam = 1 }) => {
 };
 
 const InfiniteQueriesPage = () => {
+  const [pageNumber, setPageNumber] = useState(1);
+
   const {
     isLoading,
     isError,

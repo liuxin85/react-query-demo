@@ -1,5 +1,5 @@
 import React from "react";
-import { useSuperHeroData } from "../hooks/useSuperHeroData";
+import { useSuperHeroData } from "../../hooks/useSuperHeroData";
 import { useParams } from "react-router-dom";
 
 const RQSuperHeroPage = () => {

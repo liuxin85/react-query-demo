@@ -16,19 +16,9 @@
       "alterEgo": "Princess Diana"
     },
     {
-      "name": "Falsh",
-      "alterEgo": "Bar Alen",
+      "name": "The Flash",
+      "alterEgo": "Barry Allen",
       "id": 4
-    },
-    {
-      "name": "Shazan",
-      "alterEgo": "Billy Batten",
-      "id": 5
-    },
-    {
-      "name": "aaa",
-      "alterEgo": "aaa",
-      "id": 6
     }
   ],
   "friends": [
@@ -54,7 +44,11 @@
   "channels": [
     {
       "id": "codevolution",
-      "courses": ["react", "vue", "angular"]
+      "courses": [
+        "react",
+        "vue",
+        "angular"
+      ]
     }
   ],
   "colors": [

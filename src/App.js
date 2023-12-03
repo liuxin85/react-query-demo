@@ -30,10 +30,13 @@ function App() {
               <li>
                 <Link to="/rq-super-heroes">RQ Super Heroes</Link>
               </li>
+              <li>
+                <Link to="/rq-parallel">RQ parallel</Link>
+              </li>
             </ul>
           </nav>
           <Routes>
-            <Route path="/rq-infinite" element={<InfiniteQueriesPage/>} />
+            <Route path="/rq-infinite" element={<InfiniteQueriesPage />} />
             <Route path="/rq-paginated" element={<PaginatedQueriesPage />} />
             <Route
               path="/rq-dependent"
@@ -44,10 +47,7 @@ function App() {
               element={<DynamaicParallelPage heroIds={[1, 3]} />}
             />
             <Route path="/rq-parallel" element={<ParallelQueriesPage />} />
-            <Route
-              path="/rq-super-heroes/:heroId"
-              element={<RQSuperHeroPage />}
-            />
+            <Route path="/rq-super-heroes/:heroId" element={<RQSuperHeroPage />} />
             <Route path="/super-heroes" element={<SuperHeroesPage />} />
             <Route path="/rq-super-heroes" element={<RQSuperHeroesPage />} />
             <Route path="/" element={<HomePage />} />

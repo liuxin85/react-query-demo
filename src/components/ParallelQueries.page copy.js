@@ -10,8 +10,11 @@ const fetchFriends = () => {
   return axios.get("http://localhost:4001/friends");
 };
 
-export default function ParallelQueriesPage() {
-  const { data: superHeroes } = useQuery("super-heroes", fetchSuperHeroes);
+const ParallelQueriesPage = () => {
+  const { data: superHeros } = useQuery("super-heros", fetchSuperHeroes);
   const { data: friends } = useQuery("friends", fetchFriends);
-  return <div>ParallelQueries.page</div>;
-}
+
+  return <div>ParallelQueriesPage</div>;
+};
+
+export default ParallelQueriesPage;

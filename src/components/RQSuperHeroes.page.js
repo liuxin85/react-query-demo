@@ -11,8 +11,10 @@ function RQSuperHeroesPage() {
     "super-heros",
     fetchSuperHeroes,
     {
-      staleTime: 30000,
+      refetchOnMount: true,
+    //  refetchOnWindowFocus: false
     }
+
   );
 
   console.log({ isLoading, isFetching });

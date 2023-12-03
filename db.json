@@ -34,6 +34,11 @@
       "name": "dd",
       "alterEgo": "dd",
       "id": 7
+    },
+    {
+      "name": "catwoman",
+      "alterEgo": "selina Kyle",
+      "id": 8
     }
   ],
   "friends": [

@@ -39,6 +39,9 @@ function App() {
               <li>
                 <Link to="/rq-dependent">RQ /rq-dependent</Link>
               </li>
+              <li>
+                <Link to="/rq-paginated">RQ /rq-paginated</Link>
+              </li>
             </ul>
           </nav>
           <Routes>

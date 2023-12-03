@@ -11,10 +11,11 @@ function RQSuperHeroesPage() {
     "super-heros",
     fetchSuperHeroes,
     {
-      refetchOnMount: true,
-    //  refetchOnWindowFocus: false
+      // refetchOnMount: true,
+      //  refetchOnWindowFocus: false
+      refetchInterval: 2000,
+      refetchIntervalInBackground: true
     }
-
   );
 
   console.log({ isLoading, isFetching });

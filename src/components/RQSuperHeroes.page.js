@@ -25,7 +25,7 @@ function RQSuperHeroesPage() {
     addHero(hero);
   };
 
-  console.log({ isLoading, isFetching });
+  // console.log({ isLoading, isFetching });
   if (isLoading || isFetching) {
     return <h2>Loading...</h2>;
   }

@@ -36,6 +36,9 @@ function App() {
               <li>
                 <Link to="/rq-dynamic-parallel">RQ dynamic-parallel</Link>
               </li>
+              <li>
+                <Link to="/rq-dependent">RQ /rq-dependent</Link>
+              </li>
             </ul>
           </nav>
           <Routes>

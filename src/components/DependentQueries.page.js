@@ -5,21 +5,19 @@ const fetchUserByEmail = (email) => {
   return axios.get(`http://localhost:4001/users/${email}`);
 };
 
-const fetchCoursesByChannelId = (channelId) => {
+const fetchCousesByChannelId = (channelId) => {
   return axios.get(`http://localhost:4001/channels/${channelId}`);
 };
-
 const DependentQueriesPage = ({ email }) => {
-  const { data: user } = useQuery(["user", email], () =>
-    fetchUserByEmail(email)
-  );
-  const channelId = user?.data.channelId;
+  const { data: users } = useQuery(["user", email], () => fetchUserByEmail(email));
 
-  useQuery(["courses", channelId], () => fetchCoursesByChannelId(channelId), {
+  const channelId = users?.data.channelId;
+
+  useQuery(["courses", channelId], () => fetchCousesByChannelId(channelId), {
     enabled: !!channelId,
   });
 
-  return <div>DependentQueriesPage</div>;
+  return <div>DependtQueries</div>;
 };
 
 export default DependentQueriesPage;
